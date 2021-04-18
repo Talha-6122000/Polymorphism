@@ -3,6 +3,8 @@
 class User:
   def sign_in(self):
     print("Logged In")
+  def attack(self):
+    print("Do nothing")
 class Wizard(User):
   def __init__(self,name,power):
     self.name=name
