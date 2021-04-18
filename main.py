@@ -22,7 +22,10 @@ wizard=Wizard("Talha","80")
 archar=Archar("Hassan",90)
 
 # Now here come the polymorphism
-def player_attack(obj):
-  obj.attack()
-player_attack(wizard)
-player_attack(archar)
+# def player_attack(obj):
+#   obj.attack()
+# player_attack(wizard)
+# player_attack(archar)
+# Here's Another way to do that
+for players in [wizard,archar]:
+  players.attack()
